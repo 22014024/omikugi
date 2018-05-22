@@ -21,3 +21,12 @@ body {
     color: white;
     outline: none;
 }
+#replayBtn{
+  width: 60%;
+  padding: 10px;
+    font-size: 22px;
+    border-radius: 10px;
+    background-color: #444444;
+    color: white;
+    outline: none;
+}

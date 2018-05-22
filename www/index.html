@@ -29,12 +29,32 @@
 
         document.getElementById("omikuji").src = "images/" + image_name;
         document.getElementById("playBtm").innerHTML = "やりなおす";
+        document.getElementById("replayBtm").innerHTM = "結果を結んでもう一度";
 
+      }
+      function replay(){
+        var no = Math.floor(Math.ramdom()*3);
+
+        var image_name;
+        if(no == 0){
+          image_name = "daikichi.png";
+        }else if (no == 1){
+          image_name = "chuukichi.png";
+        }else{
+          image_name = "shoukichi.png";
+        }
+
+        alert("おみくじが出ました！wさて結果は？");
+
+        document.getElementById("omikuji").src = "images/" + image_name;
+        document.getElementById("playBtm").innerHTML = "やりなおす";
+        document.getElementById("replayBtm").innerHTM = "結果を結んでもう一度";
       }
     </script>
 </head>
 <body>
 	<img src="images/omikuji-box.png" id="omikuji">
     <button id="playBtn" onclick="play()">おみくじをひく</button>
+    <button id="replayBtn" onclick="replay()">そういえば、去年おみくじ結んだな...</button>
 </body>
 </html>
